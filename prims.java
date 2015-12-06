@@ -3,6 +3,10 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Vector;
 
+/* prim's algorithm to find minimum spanning tree 
+ * 
+ */
+
 public class prims {
 
 public static void main(String[] args) {
@@ -11,10 +15,10 @@ public static void main(String[] args) {
 								int inf = Integer.MAX_VALUE;
 								int max_row, max_col;
 
-								// graph presenated in matrix form
+								// graph presented in matrix form
 
 
-																								/*        A    B    C    D    E    F */
+																			  /*        A    B    C    D    E    F */
 								int adj[][] = 								{ /* A */ { inf, 6,   5,   1,  inf, inf  },
 																                /* B */ { 6,  inf,  5,  inf,  3,  inf  },
 																                /* C */ { 5,  inf, inf,  5,  inf,  2   },

@@ -15,20 +15,19 @@ public class breadthFirstTraversal {
 
 public static void main(String[] args) {
 
-
 								int inf = Integer.MAX_VALUE;
 								int max_row, max_col;
 
 																								/*        A    B    C    D    E    F    G    H    I */
-								int adj[][] = 								{ /* A */ { inf, 8,   inf, 10,  inf, inf, 12,  inf, inf },
-																                /* B */ { 8,   inf, inf, inf, 12,  18,  inf, inf, inf },
-																                /* C */ { inf, inf, inf, inf, inf, 2,   inf, 10,  inf },
-																                /* D */ { 10,  inf, inf, inf, inf, 8,   inf, inf, inf },
-																                /* E */ { inf, 12,  inf, inf, inf, inf, 24,  inf, inf },
-																                /* F */ { inf, 18,  2,   8,   inf, inf, inf, inf, inf },
-																                /* G */ { 12,  inf, inf, inf, 24,  inf, inf, inf, inf },
-																                /* H */ { inf, inf, 10,  inf, inf, inf, inf, inf, inf },
-																                /* I */ { inf, inf, inf, inf, inf, inf, inf, 3,   inf }};
+								int adj[][] =									{ /* A */ { inf, 8,   inf, 10,  inf, inf, 12,  inf, inf },
+																               /* B */ { 8,   inf, inf, inf, 12,  18,  inf, inf, inf },
+																               /* C */ { inf, inf, inf, inf, inf, 2,   inf, 10,  inf },
+																               /* D */ { 10,  inf, inf, inf, inf, 8,   inf, inf, inf },
+																               /* E */ { inf, 12,  inf, inf, inf, inf, 24,  inf, inf },
+																               /* F */ { inf, 18,  2,   8,   inf, inf, inf, inf, inf },
+																               /* G */ { 12,  inf, inf, inf, 24,  inf, inf, inf, inf },
+																               /* H */ { inf, inf, 10,  inf, inf, inf, inf, inf, inf },
+																               /* I */ { inf, inf, inf, inf, inf, inf, inf, 3,   inf }};
 
 								max_row  = max_col = 9;
 
@@ -44,7 +43,7 @@ public static void main(String[] args) {
 								graph.add(new Vertex("I"));
 
 								for (int i = 0; i < max_row; i++)  {
-																// Go through each row of the adjacency matrix collecting neighbours
+// Go through each row of the adjacency matrix collecting neighbours
 																Vertex v = graph.elementAt(i);
 																for (int j = 0; j < max_col; j++)  {
 																								if (adj[i][j] != inf)  {
